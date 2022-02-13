@@ -12,3 +12,9 @@ vscode:
 ports:
   - port: 3000
     onOpen: open-browser
+
+github:
+  prebuilds:
+    main: true
+    branches: true
+    pullRequests: true
