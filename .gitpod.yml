@@ -1,7 +1,10 @@
 
 tasks:
   - init: npm install && npm run build
-    command: npm run dev
+    command: |
+      export HMR_HOST=`gp url 300`
+      npm run dev
+    
 vscode:
   extensions:
     - dbaeumer.vscode-eslint
